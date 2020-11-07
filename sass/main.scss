@@ -1,0 +1,23 @@
+// === UTILS ===
+@import './utils/variables';
+
+// === BASE ====
+@import './base/common';
+@import './base/container';
+
+// === COMPONENT ===
+@import './components/modal';
+@import './components/header-contact';
+@import './components/logo-header';
+@import './components/footer-contact';
+@import './components/logo-footer';
+
+// === LAYOUT ===
+@import './layout/header';
+
+@import './layout/hero';
+@import './layout/work';
+@import './layout/activity';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';

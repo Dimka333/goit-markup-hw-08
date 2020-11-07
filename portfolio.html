@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-header container">
+        <nav class="nav">
+          <a
+            class="logo-link link"
+            href="/index.html"
+            aria-label="Логотип студии"
+            lang="en"
+          >
+            <span class="logo-blue">Web</span
+            ><span class="logo-black">Studio</span>
+          </a>
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="address-header">
+          <a class="address-link link" href="mailto:info@devstudio.com"
+            ><svg class="envelope" widht="16" height="12">
+              <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+
+          <a class="address-link link" href="tel:"
+            ><svg class="smartphone" widht="10" height="16">
+              <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +380961111111</a
+          >
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===PORTFOLIO=== -->
+      <section class="portfolio">
+        <h1 hidden>Портфолио</h1>
+        <div class="container-portfolio container">
+          <ul class="portfolio-btn list">
+            <li class="portfolio-list-item">
+              <button class="portfolio-list-btn" type="button">Все</button>
+            </li>
+            <li class="portfolio-list-item">
+              <button class="portfolio-list-btn" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="portfolio-list-item">
+              <button class="portfolio-list-btn" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="portfolio-list-item">
+              <button class="portfolio-list-btn" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio-list-item">
+              <button class="portfolio-list-btn" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <ul class="portfolio-list list">
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-list-name">Технокряк</h2>
+                  <p class="portfolio-list-text">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img-1.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">
+                    Противостояние двух сильных команд по баскетболу.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 lang="en" class="portfolio-list-name">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-list-text text">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img-2.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">Рыбный ресторан.</p>
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-list-name">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="portfolio-list-text text">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img-3.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">Качественный звук недорого.</p>
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-list-name">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="portfolio-list-text text">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img-4.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">Все о коробках.</p>
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-list-name">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="portfolio-list-text text">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img-5.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">Б/У мониторы из Европы.</p>
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-list-name" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-list-text text">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img-6.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">Книжки с картинками.</p>
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-list-name">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="portfolio-list-text text">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img-7.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">Лейбл лаборатории.</p>
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-list-name">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="portfolio-list-text text">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-card">
+              <a class="portfolio-list-link link" href=""
+                ><div class="portfolio-box">
+                  <img
+                    src="./img/portfolio/img-8.jpg"
+                    alt="экран с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-card-text">
+                    Ноутбук как продолжение рук.
+                  </p>
+                </div>
+                <div class="card-content">
+                  <h2 class="portfolio-list-name" lang="en">
+                    Growing Business
+                  </h2>
+                  <p class="portfolio-list-text text">Приложение</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====FOOTER===== -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="address-container">
+          <a
+            class="logo link"
+            href="/index.html"
+            aria-label="Логотип студии"
+            lang="en"
+          >
+            <span class="logo-blue">Web</span
+            ><span class="logo-white">Studio</span>
+          </a>
+          <address class="address footer-address">
+            <a class="footer-address-mail link" href=""
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+            <a class="footer-address-email link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <a class="footer-address-tel link" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </address>
+        </div>
+        <div>
+          <p class="join">Присоединяйтесь</p>
+          <ul class="footer-social-list list">
+            <li class="footer-social-list-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon">
+                  <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form-container">
+          <form action="#">
+            <p class="footer-join-text join">Подпишитесь на рассылку</p>
+            <label class="footer-label">
+              <input
+                type="email"
+                name="user-mail"
+                placeholder="E-mail"
+                class="footer-input"
+                autocomplete="on"
+              />
+              <button type="submit" class="footer-label-btn">
+                Подписаться
+                <svg class="footer-join-icon">
+                  <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

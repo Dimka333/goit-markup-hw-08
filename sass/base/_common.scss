@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: inherit; */
+}
+
+img {
+  display: block;
+}
+body {
+  font-family: $main-font;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address,
+.link {
+  font-style: normal;
+}

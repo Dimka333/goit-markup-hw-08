@@ -1,0 +1,46 @@
+.address-link {
+  // display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+  align-items: center;
+  transition: color $transition-duration $timing-function;
+}
+.current,
+.address-link:hover,
+.address-link:focus {
+  color: $main-focus-color;
+}
+.address-header {
+  // display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.address-header :not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-header .envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.address-header .smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.envelope,
+.smartphone {
+  fill: $secondary-text-color;
+  transition: fill $transition-duration $timing-function;
+}
+.address-link:hover .smartphone {
+  fill: $main-focus-color;
+}
+.address-link:hover .envelope {
+  fill: $main-focus-color;
+}
