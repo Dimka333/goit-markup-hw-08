@@ -17,14 +17,15 @@
   </head>
   <body>
     <header class="header">
-      <div class="page-header">
-       <div class="container-header is-open container" data-menu id="menu-container">
+      <div class="page-header container">
+       <div class="container-header" id="menu-container">
         
           <a class="logo-link link" href="/index.html" aria-label="Логотип студии" lang="en">
             <span class="logo-blue">Web</span><span class="logo-black">Studio</span>
           </a>
-          <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <button type="button" class="menu-button" aria-expanded="false" 
+          aria-controls="menu-container" data-menu-button>
+            <svg width="32" height="32" aria-label="Переключатель мобильного меню">
               <use class="icon-close" href="./img/symbol-defs.svg#icon-close-modal-btn"></use>
               <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu_40px"></use>
             </svg>
@@ -46,15 +47,19 @@
         </nav>
       
         <address class="address-header">
-          <a class="address-link link" href="mailto:info@devstudio.com"><svg class="envelope">
-              <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a class="address-link link" href="tel:"><svg class="smartphone footer-icon">
-              <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +380961111111</a>
+          <ul class="addres-list list">
+            <li class="addres__list-item"><a class="address-link link" href="mailto:info@devstudio.com"><svg class="envelope">
+                <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com
+            </a></li>
+            <li class="addres__list-item"><a class="address-link link" href="tel:"><svg class="smartphone footer-icon">
+                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a></li>
+          </ul>
+          
+          
         </address>
       
       </div>
@@ -65,7 +70,7 @@
 
     <main class="main">
       <section class="hero">
-        <div class="container-hero container">
+        <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-title-btn" type="button" data-modal-open>
             Заказать услугу
@@ -177,7 +182,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
-                class="team-list-img"
+                class="team-list-img img"
                 src="./img/ourteam/img.jpg"
                 alt="фото работника"
                 width="270"
@@ -416,30 +421,19 @@
     <!-- ===FOOTER==== -->
 
     <footer class="footer">
-      <div class="container">
-        <div class="address-container">
-          <a
-            class="logo link"
-            href="/index.html"
-            aria-label="Логотип студии"
-            lang="en"
-          >
-            <span class="logo-blue">Web</span
-            ><span class="logo-white">Studio</span>
+      <div class="page-footer container">
+        <div class="addres-social">
+          <div class="address-container">
+          <a class="logo link" href="/index.html" aria-label="Логотип студии" lang="en">
+            <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
           </a>
           <address class="address footer-address">
-            <a class="footer-address-mail link" href=""
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-            <a class="footer-address-email link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-            <a class="footer-address-tel link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
+            <a class="footer-address-mail link" href="">г. Киев, пр-т Леси Украинки, 26</a>
+            <a class="footer-address-email link" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer-address-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
           </address>
         </div>
-        <div>
+        <div class="footer-social">
           <p class="join">Присоединяйтесь</p>
           <ul class="footer-social-list list">
             <li class="footer-social-list-item">
@@ -472,31 +466,27 @@
             </li>
           </ul>
         </div>
+      </div>
+        
         <div class="footer-form-container">
           <form action="#">
             <p class="footer-join-text join">Подпишитесь на рассылку</p>
-            <label class="footer-label">
-              <input
-                type="email"
-                name="user-mail"
-                placeholder="E-mail"
-                class="footer-input"
-                autocomplete="on"
-              />
-            </label>
+            <div class="footer-form">
+              <input type="email" name="user-mail" placeholder="E-mail" class="footer-input" autocomplete="on" />
             <button type="submit" class="footer-label-btn">
               Подписаться
               <svg class="footer-join-icon">
                 <use href="./img/symbol-defs.svg#icon-icon-send"></use>
               </svg>
-            </button>
+            </button></div>
+              
           </form>
         </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden container" data-modal>
-      <div class="modal container">
+      <div class="modal">
         <button type="button" data-modal-close class="close-btn">
           <svg class="close-modal-icon">
             <use href="./img/symbol-defs.svg#icon-close-modal-btn"></use>

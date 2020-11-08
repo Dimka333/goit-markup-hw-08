@@ -1,11 +1,9 @@
 .activity {
+  padding-top: 48px;
   padding-bottom: 94px;
 }
 
 .container-activity {
-  // display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   & .activity-name {
     font-weight: 700;
     font-size: 36px;
@@ -17,7 +15,7 @@
   }
 }
 .activity-list {
-  // display: flex;
+  display: flex;
   &-item:not(:last-child) {
     margin-right: 30px;
   }
@@ -39,5 +37,11 @@
       text-transform: uppercase;
       color: #ffffff;
     }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
   }
 }

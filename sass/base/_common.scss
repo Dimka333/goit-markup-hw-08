@@ -1,13 +1,15 @@
 *,
 *::before,
 *::after {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   /* box-sizing: inherit; */
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   font-family: $main-font;
@@ -19,9 +21,9 @@ body {
 
 .link {
   text-decoration: none;
+  font-style: normal;
 }
 
-.address,
-.link {
+.address-header {
   font-style: normal;
 }

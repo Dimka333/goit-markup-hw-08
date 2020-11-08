@@ -1,46 +1,59 @@
 .clients {
-  padding: 94px 0px;
+  padding: 60px 0px;
   margin-right: auto;
   margin-left: auto;
 }
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.178;
   text-align: center;
   letter-spacing: 0.03em;
   color: $main-text-color;
   margin-bottom: 50px;
 }
 .clients-list {
-  // display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 .clients-list-item {
-  & .clients-list-link {
-    // display: flex;
+  margin: 15px;
+  width: 100%;
+  width: calc((100% / 2) - 30px);
+  // width: calc((100% - (4 * 15px)) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% / 3) - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
+  .clients-list-link {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 100%;
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: border-color $transition-duration $timing-function;
 
-    & .clients-icon {
+    .clients-icon {
       fill: #afb1b8;
       transition: fill $transition-duration $timing-function;
     }
   }
-  & .clients-list-link:hover .clients-icon {
+  .clients-list-link:hover .clients-icon {
     fill: $main-focus-color;
     transition: fill $transition-duration $timing-function;
   }
-  & .clients-list-link:hover {
+  .clients-list-link:hover {
     border-color: $main-focus-color;
     transition: fill $transition-duration $timing-function;
   }
 }
 
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients-list-item:not(:last-child) {
+//   margin-right: 30px;
+// }
