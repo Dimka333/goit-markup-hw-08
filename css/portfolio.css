@@ -6,7 +6,7 @@
   /* box-sizing: inherit; */
 }
 
-img {
+images {
   display: block;
   max-width: 100%;
   height: auto;
@@ -577,10 +577,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .address-container {
-    margin-right: 78px;
-    text-align: left;
+    margin-bottom: 60px;
   }
 }
 
@@ -613,6 +612,18 @@ body {
 @media screen and (min-width: 767px) {
   .footer-social {
     margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-right: 93px;
   }
 }
 

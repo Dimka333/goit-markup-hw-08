@@ -26,8 +26,8 @@
           <button type="button" class="menu-button" aria-expanded="false" 
           aria-controls="menu-container" data-menu-button>
             <svg width="32" height="32" aria-label="Переключатель мобильного меню">
-              <use class="icon-close" href="./img/symbol-defs.svg#icon-close-modal-btn"></use>
-              <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu_40px"></use>
+              <use class="icon-close" href="./images/symbol-defs.svg#icon-close-modal-btn"></use>
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
             </svg>
           </button>
         </div>
@@ -49,12 +49,12 @@
         <address class="address-header">
           <ul class="addres-list list">
             <li class="addres__list-item"><a class="address-link link" href="mailto:info@devstudio.com"><svg class="envelope">
-                <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com
             </a></li>
             <li class="addres__list-item"><a class="address-link link" href="tel:"><svg class="smartphone footer-icon">
-                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a></li>
           </ul>
@@ -86,7 +86,7 @@
             <li class="advantages-list-item">
               <div class="container-icon">
                 <svg class="icon1" width="70" height="70">
-                  <use href="./img/symbol-defs.svg#icon-icon1"></use>
+                  <use href="./images/symbol-defs.svg#icon-icon1"></use>
                 </svg>
               </div>
               <h3 class="advantages-list-name">Внимание к деталям</h3>
@@ -98,7 +98,7 @@
             <li class="advantages-list-item clock">
               <div class="container-icon">
                 <svg class="clock" width="70" height="70">
-                  <use href="./img/symbol-defs.svg#icon-clock"></use>
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="advantages-list-name">Пунктуальность</h3>
@@ -110,7 +110,7 @@
             <li class="advantages-list-item diagram">
               <div class="container-icon">
                 <svg class="diagram" width="70" height="70">
-                  <use href="./img/symbol-defs.svg#icon-diagram"></use>
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="advantages-list-name">Планирование</h3>
@@ -122,7 +122,7 @@
             <li class="advantages-list-item astronaut">
               <div class="container-icon">
                 <svg class="astronaut" width="70" height="70">
-                  <use href="./img/symbol-defs.svg#icon-astronaut"></use>
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="advantages-list-name">Современные технологии</h3>
@@ -142,33 +142,29 @@
           <h2 class="activity-name">Чем мы занимаемся</h2>
           <ul class="activity-list list">
             <li class="activity-list-item">
-              <img
-                class="activity-photo"
-                src="./img/work/img.jpg"
-                alt="Работник пишет код на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source srcset="./images/services/box1.webp 1x, ./images/services/box1@2x.webp 2x" type="image/webp">
+                <source srcset="./images/services/box1.jpg 1x, ./images/services/box1@2x.jpg 2x">
+                <img src="./images/services/box1.jpg" alt="Компьютер" />
+              </picture>
               <p class="activity-text">Десктопные приложения</p>
             </li>
             <li class="activity-list-item">
-              <img
-                class="activity-photo"
-                src="./img/work/img-1.jpg"
-                alt="работник работает на телефоне"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/services/box2.webp 1x, ./images/services/box2@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="./images/services/box2.jpg 1x, ./images/services/box2@2x.jpg 2x">
+                <img src="./images/services/box2.jpg" alt="Смартфон" />
+              </picture>
               <p class="activity-text">Мобильные приложения</p>
             </li>
             <li class="activity-list-item">
-              <img
-                class="activity-photo"
-                src="./img/work/img-2.jpg"
-                alt="работник работает на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/services/box3.webp 1x, ./images/services/box3@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="./images/services/box3.jpg 1x, ./images/services/box3@2x.jpg 2x">
+                <img src="./images/services/box3.jpg" alt="Планшет" />
+              </picture>
               <p class="activity-text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -181,13 +177,18 @@
           <h2 class="team-our">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
-                class="team-list-img img"
-                src="./img/ourteam/img.jpg"
-                alt="фото работника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team1.webp 1x, ./images/team/team1@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/team/team1.jpg 1x, ./images/team/team1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team1-t.webp 1x, ./images/team/team1-t@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/team/team1-t.jpg 1x, ./images/team/team1-t@2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/team/team1-m.webp 1x, ./images/team/team1-m@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 480px)" srcset="./images/team/team1-m.jpg 1x, ./images/team/team1-m@2x.jpg 2x">
+                <img src="./images/team/team1-m.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-list-text" lang="en">Product Designer</p>
@@ -196,7 +197,7 @@
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
                         <use
-                          href="./img/symbol-defs.svg#icon-instagram-2"
+                          href="./images/symbol-defs.svg#icon-instagram-2"
                         ></use>
                       </svg>
                     </a>
@@ -204,21 +205,21 @@
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -226,13 +227,18 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./img/ourteam/img-1.jpg"
-                alt="фото работника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team2.webp 1x, ./images/team/team2@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/team/team2.jpg 1x, ./images/team/team2@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team2-t.webp 1x, ./images/team/team2-t@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/team/team2-t.jpg 1x, ./images/team/team2-t@2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/team/team2-m.webp 1x, ./images/team/team2-m@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 480px)" srcset="./images/team/team2-m.jpg 1x, ./images/team/team2-m@2x.jpg 2x">
+                <img src="./images/team/team2-m.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-list-text" lang="en">Frontend Developer</p>
@@ -241,7 +247,7 @@
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
                         <use
-                          href="./img/symbol-defs.svg#icon-instagram-2"
+                          href="./images/symbol-defs.svg#icon-instagram-2"
                         ></use>
                       </svg>
                     </a>
@@ -249,21 +255,21 @@
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -271,13 +277,18 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./img/ourteam/img-2.jpg"
-                alt="фото работника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team3.webp 1x, ./images/team/team3@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/team/team3.jpg 1x, ./images/team/team3@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team3-t.webp 1x, ./images/team/team3-t@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/team/team3-t.jpg 1x, ./images/team/team3-t@2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/team/team3-m.webp 1x, ./images/team/team3-m@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 480px)" srcset="./images/team/team3-m.jpg 1x, ./images/team/team3-m@2x.jpg 2x">
+                <img src="./images/team/team3-m.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-list-text" lang="en">Marketing</p>
@@ -286,7 +297,7 @@
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
                         <use
-                          href="./img/symbol-defs.svg#icon-instagram-2"
+                          href="./images/symbol-defs.svg#icon-instagram-2"
                         ></use>
                       </svg>
                     </a>
@@ -294,21 +305,21 @@
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -317,13 +328,18 @@
             </li>
 
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./img/ourteam/img-3.jpg"
-                alt="фото работника"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team/team4.webp 1x, ./images/team/team4@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 1200px)" srcset="./images/team/team4.jpg 1x, ./images/team/team4@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/team/team4-t.webp 1x, ./images/team/team4-t@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 768px)" srcset="./images/team/team4-t.jpg 1x, ./images/team/team4-t@2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/team/team4-m.webp 1x, ./images/team/team4-m@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 480px)" srcset="./images/team/team4-m.jpg 1x, ./images/team/team4-m@2x.jpg 2x">
+                <img src="./images/team/team4.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="team-description">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-list-text text" lang="en">UI Designer</p>
@@ -332,7 +348,7 @@
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
                         <use
-                          href="./img/symbol-defs.svg#icon-instagram-2"
+                          href="./images/symbol-defs.svg#icon-instagram-2"
                         ></use>
                       </svg>
                     </a>
@@ -340,21 +356,21 @@
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-social-item">
                     <a class="team-social-link link" href="">
                       <svg class="team-social-link-icon">
-                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -374,42 +390,42 @@
             <li class="clients-list-item">
               <a class="clients-list-link" href="">
                 <svg width="44" height="50" class="clients-icon">
-                  <use href="./img/symbol-defs.svg#icon-logo-1"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list-item">
               <a class="clients-list-link" href="">
                 <svg width="40" height="52" class="clients-icon">
-                  <use href="./img/symbol-defs.svg#icon-logo-2"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list-item">
               <a class="clients-list-link" href="">
                 <svg width="41" height="42" class="clients-icon">
-                  <use href="./img/symbol-defs.svg#icon-logo-3"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list-item">
               <a class="clients-list-link" href="">
                 <svg width="80" height="42" class="clients-icon">
-                  <use href="./img/symbol-defs.svg#icon-logo-4"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list-item">
               <a class="clients-list-link" href="">
                 <svg width="59" height="47" class="clients-icon">
-                  <use href="./img/symbol-defs.svg#icon-logo-5"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list-item">
               <a class="clients-list-link" href="">
                 <svg width="88" height="46" class="clients-icon">
-                  <use href="./img/symbol-defs.svg#icon-logo-6"></use>
+                  <use href="./images/symbol-defs.svg#icon-logo-6"></use>
                 </svg>
               </a>
             </li>
@@ -439,28 +455,28 @@
             <li class="footer-social-list-item">
               <a href="" class="footer-social-link">
                 <svg class="footer-social-icon">
-                  <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
+                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list-item">
               <a href="" class="footer-social-link">
                 <svg class="footer-social-icon">
-                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list-item">
               <a href="" class="footer-social-link">
                 <svg class="footer-social-icon">
-                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list-item">
               <a href="" class="footer-social-link">
                 <svg class="footer-social-icon">
-                  <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -476,7 +492,7 @@
             <button type="submit" class="footer-label-btn">
               Подписаться
               <svg class="footer-join-icon">
-                <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button></div>
               
@@ -489,7 +505,7 @@
       <div class="modal">
         <button type="button" data-modal-close class="close-btn">
           <svg class="close-modal-icon">
-            <use href="./img/symbol-defs.svg#icon-close-modal-btn"></use>
+            <use href="./images/symbol-defs.svg#icon-close-modal-btn"></use>
           </svg>
         </button>
         <form action="#">
@@ -499,7 +515,7 @@
             <input type="text" name="user-name" class="input-form" />
             <svg class="input-icon">
               <use
-                href="./img/symbol-defs.svg#icon-person-black-18dp"
+                href="./images/symbol-defs.svg#icon-person-black-18dp"
               ></use></svg
           ></label>
           <label class="label-form"
@@ -507,7 +523,7 @@
             <input type="tel" name="user-tel" class="input-form" />
             <svg class="input-icon">
               <use
-                href="./img/symbol-defs.svg#icon-phone-black-18dp"
+                href="./images/symbol-defs.svg#icon-phone-black-18dp"
               ></use></svg
           ></label>
           <label class="label-form"
@@ -515,7 +531,7 @@
             <input type="email" name="user-mail" class="input-form" />
             <svg class="input-icon">
               <use
-                href="./img/symbol-defs.svg#icon-email-black-18dp"
+                href="./images/symbol-defs.svg#icon-email-black-18dp"
               ></use></svg
           ></label>
           <label class="label-form"

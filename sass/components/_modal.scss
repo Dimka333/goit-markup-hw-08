@@ -132,14 +132,14 @@
   top: 5px;
   left: 14px;
   display: inline-block;
-  background-image: url(../img/noncheck-icon.svg);
+  background-image: url(../images/noncheck-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image $timing-function $transition-duration;
 }
 
 .checkbox:checked ~ .form-check::before {
-  background-image: url(../img/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
 }
 .label-checkbox {
   display: block;

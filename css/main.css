@@ -6,7 +6,7 @@
   /* box-sizing: inherit; */
 }
 
-img {
+images {
   display: block;
   max-width: 100%;
   height: auto;
@@ -199,14 +199,14 @@ body {
   top: 5px;
   left: 14px;
   display: inline-block;
-  background-image: url(../img/noncheck-icon.svg);
+  background-image: url(../images/noncheck-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
   transition: background-image cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .checkbox:checked ~ .form-check::before {
-  background-image: url(../img/icon-check.svg);
+  background-image: url(../images/icon-check.svg);
 }
 
 .label-checkbox {
@@ -606,10 +606,55 @@ body {
   height: 400px;
   padding: 118px 0px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/sprite/heroimg-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-m.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #141457;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 480px;
+    height: 400px;
+    background-size: 480px 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-m.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-m@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-t.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-t@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0px;
+    background-size: 1600px 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-d@2x.jpg);
+  }
 }
 
 .hero-title {
@@ -622,6 +667,22 @@ body {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 368px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36364;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero-title-btn {
@@ -1008,10 +1069,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .address-container {
-    margin-right: 78px;
-    text-align: left;
+    margin-bottom: 60px;
   }
 }
 
@@ -1044,6 +1104,18 @@ body {
 @media screen and (min-width: 767px) {
   .footer-social {
     margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-right: 93px;
   }
 }
 
