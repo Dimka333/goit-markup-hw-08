@@ -900,6 +900,12 @@ body {
   margin-left: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0px;
+  }
+}
+
 .section-title {
   font-weight: 700;
   font-size: 28px;
@@ -908,6 +914,15 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .clients-list {
