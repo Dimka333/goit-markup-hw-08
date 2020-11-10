@@ -1,6 +1,11 @@
 .header {
   border-bottom: 1px solid #ececec;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 9;
 }
 
 .page-header {
@@ -74,6 +79,18 @@
   content: '';
   background-color: #2196f3;
   border-radius: 2px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+  }
+  @media screen and (max-width: 767px) {
+    transform: translateX(-50%);
+  }
+}
+.portf.current::after {
+  width: 99px;
 }
 
 .nav-list-link:hover,
@@ -172,19 +189,4 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
   }
-}
-
-.current::after {
-  // transform: translateX(-50%);
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    left: 0;
-    bottom: -1px;
-  }
-  @media screen and (max-width: 767px) {
-    transform: translateX(-50%);
-  }
-}
-.portf.current::after {
-  width: 99px;
 }
